@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossario: Profesiones y Lugares de Trabajo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #fff5e6; /* Sfondo chiaro */
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #d35400; /* Arancione */
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        .language-buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+            font-size: 1em;
+            background-color: #2980b9; /* Blu */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #1c598a;
+        }
+        .glossary-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        dl {
+            width: 100%;
+            border: 3px solid #e67e22; /* Arancione scuro */
+            border-radius: 10px;
+            background-color: #fdf6e3; /* Bianco crema */
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        dt {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        dd {
+            margin: 0 0 10px 0;
+            padding: 0 0 5px 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Glossario: Profesiones y Lugares de Trabajo</h1>
+    <div class="language-buttons">
+        <button onclick="setLanguage('es')">Español</button>
+        <button onclick="setLanguage('it')">Italiano</button>
+        <button onclick="setLanguage('en')">English</button>
+    </div>
+
+    <div class="glossary-container">
+        <dl id="glossary">
+            <dt data-es="Abogado" data-it="Avvocato" data-en="Lawyer"></dt>
+            <dd data-es="Profesional que asesora y representa legalmente a sus clientes." data-it="Professionista che assiste e rappresenta legalmente i propri clienti." data-en="Professional who advises and legally represents their clients."></dd>
+
+            <dt data-es="Arquitecto" data-it="Architetto" data-en="Architect"></dt>
+            <dd data-es="Persona que diseña edificios y otros espacios habitables." data-it="Persona che progetta edifici e altri spazi abitabili." data-en="Person who designs buildings and other livable spaces."></dd>
+
+            <dt data-es="Ingeniero" data-it="Ingegnere" data-en="Engineer"></dt>
+            <dd data-es="Profesional que aplica principios científicos y matemáticos para resolver problemas técnicos." data-it="Professionista che applica principi scientifici e matematici per risolvere problemi tecnici." data-en="Professional who applies scientific and mathematical principles to solve technical problems."></dd>
+
+            <dt data-es="Doctor" data-it="Dottore" data-en="Doctor"></dt>
+            <dd data-es="Profesional de la salud que se encarga de diagnosticar y tratar enfermedades." data-it="Professionista della salute che si occupa di diagnosticare e trattare malattie." data-en="Health professional who diagnoses and treats diseases."></dd>
+
+            <dt data-es="Enfermero" data-it="Infermiere" data-en="Nurse"></dt>
+            <dd data-es="Profesional de la salud que cuida a los pacientes y asiste a los doctores." data-it="Professionista della salute che si prende cura dei pazienti e assiste i medici." data-en="Health professional who cares for patients and assists doctors."></dd>
+
+            <dt data-es="Oficina" data-it="Ufficio" data-en="Office"></dt>
+            <dd data-es="Lugar donde se realizan tareas administrativas y de gestión." data-it="Luogo dove si svolgono attività amministrative e di gestione." data-en="Place where administrative and management tasks are carried out."></dd>
+
+            <dt data-es="Hospital" data-it="Ospedale" data-en="Hospital"></dt>
+            <dd data-es="Institución dedicada a la atención médica y al tratamiento de pacientes." data-it="Istituzione dedicata all'assistenza medica e al trattamento dei pazienti." data-en="Institution dedicated to medical care and treatment of patients."></dd>
+
+            <dt data-es="Escuela" data-it="Scuola" data-en="School"></dt>
+            <dd data-es="Institución educativa donde se imparte enseñanza a estudiantes." data-it="Istituzione educativa dove si insegna agli studenti." data-en="Educational institution where teaching is provided to students."></dd>
+
+            <dt data-es="Fábrica" data-it="Fabbrica" data-en="Factory"></dt>
+            <dd data-es="Lugar donde se producen bienes a gran escala mediante procesos industriales." data-it="Luogo dove si producono beni su larga scala mediante processi industriali." data-en="Place where goods are produced on a large scale using industrial processes."></dd>
+
+            <dt data-es="Estudio" data-it="Studio" data-en="Studio"></dt>
+            <dd data-es="Espacio donde se trabaja en proyectos creativos, como diseño, arte o música." data-it="Spazio dove si lavora a progetti creativi, come design, arte o musica." data-en="Space where creative projects are worked on, such as design, art, or music."></dd>
+
+            <dt data-es="Artista" data-it="Artista" data-en="Artist"></dt>
+            <dd data-es="Persona que crea obras de arte, como pintura, escultura o música." data-it="Persona che crea opere d'arte, come pittura, scultura o musica." data-en="Person who creates works of art, such as painting, sculpture, or music."></dd>
+
+            <dt data-es="Chef" data-it="Chef" data-en="Chef"></dt>
+            <dd data-es="Profesional de la cocina que se encarga de preparar y presentar platos." data-it="Professionista della cucina che si occupa di preparare e presentare piatti." data-en="Culinary professional who prepares and presents dishes."></dd>
+
+            <dt data-es="Periodista" data-it="Giornalista" data-en="Journalist"></dt>
+            <dd data-es="Persona que investiga y reporta noticias y eventos de actualidad." data-it="Persona che ricerca e riporta notizie e eventi di attualità." data-en="Person who investigates and reports news and current events."></dd>
+
+            <dt data-es="Banco" data-it="Banca" data-en="Bank"></dt>
+            <dd data-es="Institución financiera donde se manejan cuentas y se realizan transacciones." data-it="Istituzione finanziaria dove si gestiscono conti e si effettuano transazioni." data-en="Financial institution where accounts are managed and transactions are made."></dd>
+
+            <dt data-es="Centro Comercial" data-it="Centro Commerciale" data-en="Shopping Center"></dt>
+            <dd data-es="Lugar donde se encuentran diversas tiendas y servicios para los consumidores." data-it="Luogo dove si trovano vari negozi e servizi per i consumatori." data-en="Place where various stores and services for consumers can be found."></dd>
+        </dl>
+    </div>
+
+    <script>
+        function setLanguage(lang) {
+            const glossaryItems = document.querySelectorAll('#glossary dt, #glossary dd');
+            glossaryItems.forEach(item => {
+                item.textContent = item.getAttribute(`data-${lang}`);
+            });
+        }
+    </script>
+
+</body>
+</html>
